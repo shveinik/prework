@@ -1,6 +1,6 @@
 var myRover  = {
   face: "W",
-  position: [0,0],
+  position: [5,5],
   command: ["r","l","f","f","l"]
 }
 
