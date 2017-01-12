@@ -1,7 +1,7 @@
 var myRover  = {
-  face: "W",
-  position: [5,5],
-  command: ["r","l","f","f","l"]
+  face: "N",
+  position: [2,5],
+  command: ["r","f","l","b"]
 }
 
 var checkFace = function(rover){  /*function checking the NWSE direction, and
@@ -34,8 +34,7 @@ var northFace = function(rover){
       case "f" : rover.position[1]++
         break;
             }
-    console.log("New Rover Position: [" + rover.position[0] + ", " + rover.position[1] + "]")
-}
+}console.log("New Rover Position: [" + rover.position[0] + ", " + rover.position[1] + "]")
 }
 var southFace = function(rover){
   for(i=0; i < rover.command.length; i++){
@@ -50,8 +49,7 @@ var southFace = function(rover){
         case "l": rover.position[1]++
           break;
             }
-    console.log("New Rover Position: [" + rover.position[0] + ", " + rover.position[1] + "]")
-}
+}console.log("New Rover Position: [" + rover.position[0] + ", " + rover.position[1] + "]")
 }
 var eastFace = function(rover){
   for(i=0; i < rover.command.length; i++){
@@ -66,8 +64,7 @@ var eastFace = function(rover){
         case "l": rover.position[0]++
           break;
             }
-    console.log("New Rover Position: [" + rover.position[0] + ", " + rover.position[1] + "]")
-}
+}console.log("New Rover Position: [" + rover.position[0] + ", " + rover.position[1] + "]")
 }
 var westFace = function(rover){
   for(i=0; i < rover.command.length; i++){
@@ -82,8 +79,7 @@ var westFace = function(rover){
         case "l": rover.position[0]--
           break;
             }
-    console.log("New Rover Position: [" + rover.position[0] + ", " + rover.position[1] + "]")
-}
+}console.log("New Rover Position: [" + rover.position[0] + ", " + rover.position[1] + "]")
 }
 
 checkFace(myRover)
